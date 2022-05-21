@@ -5,7 +5,6 @@ const users = ["Peter", "John", "Janice"];
 export const handler = (_req: Request, _ctx: HandlerContext): Response => {
   const { name } = _ctx.params;
   const user = users.find((user) => user === name);
-  console.log({ name, user });
 
   if (user) {
     return Response.json(user);
