@@ -9,7 +9,7 @@ export default function Users() {
     fetch("/api/users")
       .then((res) => res.json())
       .then((users) => setUsers(users));
-  });
+  }, []);
 
   return (
     <div>
