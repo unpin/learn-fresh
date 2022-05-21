@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment"
+  },
+  "tasks": {
+    "start": "deno run -A --watch --no-check main.ts"
+  }
+}
